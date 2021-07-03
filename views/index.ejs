@@ -8,14 +8,14 @@
     <title>Online Editor</title>
 </head>
 <body>
-    <form>
-        <select>
+    <form action="/" method="POST">
+        <select name="language">
             <option value="python3">Python3</option>
         </select>
-        <textarea></textarea>
-        <textarea></textarea>
-        <button type="submit"></button>
-        <textarea></textarea>
+        <textarea name="code"><%=code%></textarea>
+        <textarea name="stdin"><%=stdin%></textarea>
+        <button type="submit">Run</button>
+        <textarea name="stdout" readonly><%=stdout%></textarea>
     </form>
 </body>
 </html>
