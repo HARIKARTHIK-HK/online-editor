@@ -4,18 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/chinese-rocks" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Qahiri&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="index.css">
     <title>Online Editor</title>
 </head>
 <body>
+    <h1 class="heading">ONLINE EDITOR</h1>
+    <h2 class="subheading">WELCOME</h2>
     <form action="/" method="POST">
-        <select name="language">
+        
+        <div class="select">
+            <p class="desc">SELECT LANGUAGE</p>
+        <select  class="selectbox" name="language">
             <option value="python3">Python3</option>
-        </select>
-        <textarea name="code"><%=code%></textarea>
-        <textarea name="stdin"><%=stdin%></textarea>
-        <button type="submit">Run</button>
-        <textarea name="stdout" readonly><%=stdout%></textarea>
+        </select></div>
+        <p class="text1">ENTER YOUR CODE :</p>
+        <textarea class="textarea1" placeholder="    Your Code" name="code"><%=code%></textarea>
+        <br>
+        <p class="text2">ENTER YOUR STDIN :</p>
+        <textarea class="textarea2" placeholder="    Stdin " name="stdin"><%=stdin%></textarea>
+        <div class="btndiv">
+        <button class="btn" type="submit">Run</button>
+    </div>
+    <p class="text2"> YOUR STDOUT :</p>
+        <textarea class="textarea3" name="stdout" readonly><%=stdout%></textarea>
     </form>
 </body>
+<footer>
+    <p class="desc2">IF YOU LIKE MY WORK PLEASE CHECK OUT MY</p>
+    <block class="btndiv"><a href="https://github.com/sudip-mondal-2002" class="link">GITHUB ACCOUNT</a></block>
+    <p class="desc2"> &copy copyrights 2021</p>
+</footer>
 </html>
